@@ -29,7 +29,7 @@ The technique synchronizes breathing, heart rate, and blood pressure into cohere
 - Creates phase alignment between respiratory, cardiac, and blood pressure rhythms
 - Activates parasympathetic nervous system for relaxation
 
-For the full theoretical background, see: [Mathematical Spirituality: Sinewave Breathing](https://sinewavelab.com/sonofields/mathematical-spirituality-sinewave-breathing/)
+For the full theoretical background, see: [Mathematical Spirituality: Sinewave Breathing](https://sinewavelab.com/sonofields/introduction-to-mathematical-spirituality-sinewave-breathing/)
 
 ## App Features
 
@@ -102,29 +102,11 @@ The app relies on the following libraries (visible in code imports):
 - Airbnb Lottie for Android
 - Standard Android SDK components (SoundPool, Vibrator, etc.)
 
-## Technical Highlights
-
-### Architecture Patterns
-
-- Activity-Fragment architecture for settings
-- SharedPreferences for data persistence
-- Listener-based UI event handling
-- Animation lifecycle management
-
-### Key Implementation Details
-
-- **Frequency calculations** with precise rounding to 3 decimal places
-- **Animation speed scaling** relative to base frequency (0.08 Hz)
-- **Progress-based sound triggering** at specific animation points (0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95)
-- **Volume normalization** between 0.0 and 1.0 for cross-device consistency
-- **Vibration compatibility** for both legacy (pre-O) and modern Android versions
-- **Fade animations** for session start/stop transitions
-
 ## License
 
 This source code is provided under a **Visual Review License**.
 
-See [LICENSE.md](https://claude.ai/chat/LICENSE.md) for complete terms.
+See LICENSE.md for complete terms.
 
 ## About the Developer
 
@@ -138,5 +120,6 @@ See [LICENSE.md](https://claude.ai/chat/LICENSE.md) for complete terms.
 ## Contact
 
 For inquiries about the complete application:
+
 
 - Visit: [SonoFields](https://sinewavelab.com/sonofields/)
