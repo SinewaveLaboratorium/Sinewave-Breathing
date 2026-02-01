@@ -1,125 +1,52 @@
-# SLGain VST Audio Plugin
+# Sinewave Breathing Android App
 
-![License](https://img.shields.io/badge/license-Visual%20Review%20Only-red) ![Platform](https://img.shields.io/badge/platform-Android-green) ![Language](https://img.shields.io/badge/language-Java-orange)
+![License](https://img.shields.io/badge/license-Open%20Consultation%20Only-red) ![Platform](https://img.shields.io/badge/platform-Android-green) ![Language](https://img.shields.io/badge/language-Java-orange)
 
-## About This Repository
+## ⚠️ Important Note
 
-This repository contains the **logic-only source code** of the Sinewave Breathing Android application. It is provided for **demonstration, educational review, and professional evaluation purposes only**.
+This repository contains **logic-only source code** for demonstration and educational review. It is **not buildable** as it excludes all graphical assets, audio files, and build configurations.
 
-⚠️ **This code cannot be compiled or executed** as all graphical assets, audio files, build configurations, and resource definitions have been intentionally excluded.
+---
 
 ## What is Sinewave Breathing?
 
-Sinewave Breathing is an Android application that guides users through a **mathematically-optimized breathing technique**.
+An Android application designed to guide users through **mathematically-optimized breathing** (0.02 Hz - 0.135 Hz). The goal is to reach the **baroreflex resonant frequency** (~0.1 Hz) to maximize heart rate variability (HRV) and induce deep relaxation.
 
-The app helps users:
+### Key Features (Logic Included)
 
-- Practice sinusoidal breathing patterns at specific frequencies (0.02 Hz - 0.135 Hz)
-- Target their personal **baroreflex resonant frequency** (typically ~0.1 Hz)
-- Achieve **heart rate variability coherence** and **phase alignment**
-- Manage stress, anxiety, and improve sleep quality
-- Visualize their breathing with animated sine wave graphics
+* **Precision Controls:** Frequency adjustment down to  increments.
+* **Sync Engine:** Logic for synchronizing Lottie animations, Haptic feedback, and SoundPool audio cues.
+* **Session Management:** Configurable timers and persistent user preferences.
+* **Phase Alignment:** Calculations for 8-phase breath cycle triggers.
 
-### The Science Behind It
+---
 
-The technique synchronizes breathing, heart rate, and blood pressure into coherent sine wave patterns. When practiced at the user's resonant frequency (~0.1 Hz or 6 breaths per minute), it:
+## Repository Structure
 
-- Maximizes heart rate variability amplitude
-- Stimulates the baroreflex response
-- Creates phase alignment between respiratory, cardiac, and blood pressure rhythms
-- Activates parasympathetic nervous system for relaxation
+| File | Description |
+| --- | --- |
+| `MainActivity.java` | Core breathing logic and session state management. |
+| `SettingsFragment.java` | Configuration logic for user preferences. |
+| `SettingsActivity.java` | Container for the settings UI. |
 
-For the full theoretical background, see: [Mathematical Spirituality: Sinewave Breathing](https://sinewavelab.com/sonofields/introduction-to-mathematical-spirituality-sinewave-breathing/)
+**Excluded Proprietary Assets:** XML Layouts, Lottie JSON files, `.raw` audio files, and Gradle build scripts.
 
-## App Features
+---
 
-Based on the source code, the app includes:
+## Technical Context
 
-### Core Functionality
+The code demonstrates implementation of:
 
-- **Adjustable breathing frequency** (0.02 Hz - 0.135 Hz range)
-  - Fine adjustment buttons (±0.001 Hz / ±0.005 Hz)
-  - Coarse adjustment buttons (±0.025 Hz)
-- **Lottie-based sine wave animation** that synchronizes with breathing cycles
-- **Session timer** with configurable duration
-- **Audio guidance system** with multiple sound cue options:
-  - 8 clicks per cycle (at 8 breath phases)
-  - 2 clicks per cycle (at inhalation/exhalation transitions)
-  - Custom configurations
-- **Haptic feedback** (vibration) synchronized with audio cues
-- **Volume control** integrated with system audio
-- **Session completion notifications**
+* **SoundPool** for low-latency rhythmic cues.
+* **SharedPreferences** for session persistence.
+* **CountDownTimer** for precise breathing intervals.
 
-### Technical Implementation
+## License & Contact
 
-- SharedPreferences for persistent user settings
-- CountDownTimer for session management
-- SoundPool for low-latency audio playback
-- Lottie animations for smooth, scalable graphics
-- PreferenceFragment for settings management
-- Keep-screen-on during active sessions
+**License:** Visual Review Only (See `LICENSE.md`).
 
-## Repository Contents
+**Developer:** [Sinewave Lab](https://sinewavelab.com/sonofields/) (Micael Nobre).
 
-### Included Files
+---
 
-- `MainActivity.java` - Main application logic and breathing session control
-- `SettingsActivity.java` - Settings screen container
-- `SettingsFragment.java` - Preference fragment for user settings
-- `LICENSE.md` - Visual Review License
-
-### Intentionally Excluded
-
-As stated in the LICENSE, the following are **not included** and remain proprietary:
-
-#### Visual Assets
-
-- Lottie animation files (sine wave visualization)
-- UI/UX layouts (XML files)
-- Icons and drawable resources
-- Animation definitions
-- App theme and styling
-
-#### Audio Assets
-
-- Click sound effects (`click_in.raw`)
-- Transition sound effects (`change.raw`)
-- Session completion sound (`ending.raw`)
-
-#### Build Configuration
-
-- `AndroidManifest.xml`
-- Gradle build files
-- Resource XML files (`preferences.xml`, `menu_main.xml`, layouts)
-- ProGuard/R8 rules
-
-#### Dependencies Used (Not Included)
-
-The app relies on the following libraries (visible in code imports):
-
-- AndroidX AppCompat
-- AndroidX Preference
-- Airbnb Lottie for Android
-- Standard Android SDK components (SoundPool, Vibrator, etc.)
-
-## License
-
-This source code is provided under a **Visual Review License**.
-
-See LICENSE.md for complete terms.
-
-## About the Developer
-
-**Sinewave Lab** (Micael Nobre)
- Creator of Mathematical Spirituality philosophy and SonoFields research project
-
-- Website: [sinewavelab.com/sonofields](https://sinewavelab.com/sonofields/)
-- Research: Frequency-based wellness applications
-- Focus: Intersection of mathematics, spirituality, and human physiology
-
-## Contact
-
-For inquiries about the complete application:
-
-
-- Visit: [SonoFields](https://sinewavelab.com/sonofields/)
+**Would you like me to generate a shorter, one-page "Developer Summary" specifically for a portfolio or CV?**
