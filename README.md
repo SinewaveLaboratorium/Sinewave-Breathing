@@ -6,8 +6,6 @@
 
 This repository contains **logic-only source code** for demonstration and educational review. It is **not buildable** as it excludes all graphical assets, audio files, and build configurations.
 
----
-
 ## What is Sinewave Breathing?
 
 An Android application designed to guide users through **mathematically-optimized breathing** (0.02 Hz - 0.135 Hz). The goal is to reach the **baroreflex resonant frequency** (~0.1 Hz) to maximize heart rate variability (HRV) and induce deep relaxation.
@@ -19,8 +17,6 @@ An Android application designed to guide users through **mathematically-optimize
 * **Session Management:** Configurable timers and persistent user preferences.
 * **Phase Alignment:** Calculations for 8-phase breath cycle triggers.
 
----
-
 ## Repository Structure
 
 | File | Description |
@@ -30,8 +26,6 @@ An Android application designed to guide users through **mathematically-optimize
 | `SettingsActivity.java` | Container for the settings UI. |
 
 **Excluded Proprietary Assets:** XML Layouts, Lottie JSON files, `.raw` audio files, and Gradle build scripts.
-
----
 
 ## Technical Context
 
@@ -47,6 +41,3 @@ The code demonstrates implementation of:
 
 **Developer:** [Sinewave Lab](https://sinewavelab.com/sonofields/) (Micael Nobre).
 
----
-
-**Would you like me to generate a shorter, one-page "Developer Summary" specifically for a portfolio or CV?**
